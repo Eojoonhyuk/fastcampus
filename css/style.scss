@@ -405,7 +405,9 @@
     .footer-top {
       background-color: #f6f6f6;
       padding: 5rem 6rem 0 6rem;
-
+      @media all and (min-width: 768px) and (max-width: 1023px) {
+        padding: 3rem;
+      }
       p {
         font-size: 0.625rem;
         color: #4d4d4d;
@@ -430,9 +432,17 @@
 
       .footer-list-box {
         display: flex;
+        @media all and (min-width: 768px) and (max-width: 1023px) {
+          flex-wrap: wrap;
+        }
         .list-title {
           padding: 0 0.75rem;
           flex: 1;
+          @media all and (min-width: 768px) and (max-width: 1023px) {
+            flex: 1 1 50%;
+            margin-bottom: 2rem;
+            padding: 0;
+          }
         }
       }
       .privacy {
@@ -465,6 +475,9 @@
       }
     }
     .footer-bottom {
+      @media all and (min-width: 768px) and (max-width: 1023px) {
+        padding: 3rem;
+      }
       padding: 0 6rem;
       height: 7.25rem;
       display: flex;
